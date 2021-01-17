@@ -12,74 +12,19 @@ html {
   padding: 0 80px;
   margin: auto;
 }
-
-/*nav-bar*/
-.navbar {
-  width: 100%;
-  padding: 30px 0;
-  position: fixed;
-  font-family: "Ubuntu", sans-serif;
-  transition: all 0.3s ease;
-}
-.navbar.sticky {
-  padding: 15px 0;
-  background: #323232;
-}
-.navbar.sticky .logo a {
-  color: #fff;
-}
-.navbar.sticky .logo a span {
-  color: #fff;
-}
-.navbar.sticky .menu li a {
-  color: #fff;
-}
-.navbar .max-width {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar .logo a {
-  font-size: 35px;
-  font-weight: 600;
-  color: crimson;
-}
-.navbar .logo a span {
-  color: #111;
-}
-.navbar .menu li {
-  list-style: none;
-  display: inline-block;
-}
-.navbar .menu li a {
-  color: #111;
-  font-size: 20px;
-  font-weight: 500;
-  margin-left: 25px;
-  transition: color 0.3 ease;
-}
-.navbar .menu li a:hover {
-  color: #b8b8b8;
-}
-
-/* About styling */
-section {
+section{
   padding: 100px 0;
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
 }
 .about,
 .contact,
 .projects,
 footer {
   font-family: "Poppins", sans-serif;
-}
-section .title {
-  position: relative;
-  text-align: center;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
 }
 .about .about-content,
 .contact .contact-content,
@@ -89,6 +34,89 @@ section .title {
   align-items: center;
   justify-content: space-between;
 }
+section .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: #111;
+  transform: translateX(-50%);
+}
+section .title::after{
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  font-size: 20px;
+  padding: 0 5px;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+/*nav-bar*/
+.navbar{
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  padding: 30px 0;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  padding: 15px 0;
+  background: #323232;
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: #111;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .logo a span{
+  color: crimson;
+}
+.navbar.sticky .logo a{
+  color: #fff;
+}
+.navbar.sticky .logo a span{
+  color: #fff;
+}
+.navbar.sticky .menu li a{
+  color: #fff;
+}
+.navbar .menu li{
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a{
+  display: block;
+  color: #111;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+  opacity: .5;
+  transition: .3;
+}
+
+
+/* About styling */
 .about .about-content .left {
   width: 45%;
 }
@@ -113,7 +141,7 @@ section .title {
 }
 .about .about-content .right a {
   display: inline-block;
-  background: crimson;
+  background: #323232;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
@@ -124,7 +152,7 @@ section .title {
   transition: all 0.3s ease;
 }
 .about .about-content .right a:hover {
-  color: crimson;
+  color: #323232;
   background: none;
 }
 
@@ -134,7 +162,10 @@ section .title {
   font-size: 23px;
   cursor: pointer;
   display: none;
+}.navbar.sticky .menu-btn{
+  color: #fff;
 }
+
 
 /*home-section*/
 .home {
@@ -182,7 +213,8 @@ section .title {
   transition: all 0.3s ease;
 }
 .projects .project-content .card:hover {
-  background: crimson;
+  opacity: .5;
+  transition: .3;
 }
 .projects .project-content .card .box {
   transition: all 0.3s ease;
@@ -221,7 +253,7 @@ section .title {
 }
 .contact .contact-content .row i {
   font-size: 25px;
-  color: crimson;
+  color: #323232;
 }
 .contact .contact-content .info .head {
   font-weight: 500;
@@ -243,11 +275,12 @@ section .title {
   color: #0e76a8;
 }
 .contact .contact-content .right .fab:hover {
-  color: crimson;
+  opacity: .5;
+  transition: .3;
 }
 .contact .contact-content .right .email-btn {
   display: inline-block;
-  background: crimson;
+  background: #323232;
   color: #fff;
   font-size: 20px;
   font-weight: 500;
@@ -258,7 +291,7 @@ section .title {
   transition: all 0.3s ease;
 }
 .contact-content .right .email-btn:hover {
-  color: crimson;
+  color: #323232;
   background: none;
 }
 /* footersection */
