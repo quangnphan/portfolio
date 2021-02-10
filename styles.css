@@ -12,10 +12,10 @@ html {
   padding: 0 80px;
   margin: auto;
 }
-section{
+section {
   padding: 100px 0;
 }
-.max-width{
+.max-width {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
@@ -34,16 +34,16 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-section .title{
+section .title {
   position: relative;
   text-align: center;
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
-section .title::before{
+section .title::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -53,7 +53,7 @@ section .title::before{
   background: #111;
   transform: translateX(-50%);
 }
-section .title::after{
+section .title::after {
   position: absolute;
   bottom: -8px;
   left: 50%;
@@ -64,45 +64,45 @@ section .title::after{
 }
 
 /*nav-bar*/
-.navbar{
+.navbar {
   position: fixed;
   width: 100%;
   z-index: 999;
   padding: 30px 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
-.navbar.sticky{
+.navbar.sticky {
   padding: 15px 0;
   background: #323232;
 }
-.navbar .max-width{
+.navbar .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.navbar .logo a{
+.navbar .logo a {
   color: #111;
   font-size: 35px;
   font-weight: 600;
 }
-.navbar .logo a span{
+.navbar .logo a span {
   color: crimson;
 }
-.navbar.sticky .logo a{
+.navbar.sticky .logo a {
   color: #fff;
 }
-.navbar.sticky .logo a span{
+.navbar.sticky .logo a span {
   color: #fff;
 }
-.navbar.sticky .menu li a{
+.navbar.sticky .menu li a {
   color: #fff;
 }
-.navbar .menu li{
+.navbar .menu li {
   list-style: none;
   display: inline-block;
 }
-.navbar .menu li a{
+.navbar .menu li a {
   display: block;
   color: #111;
   font-size: 18px;
@@ -110,11 +110,10 @@ section .title::after{
   margin-left: 25px;
   transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
-  opacity: .5;
-  transition: .3;
+.navbar .menu li a:hover {
+  opacity: 0.5;
+  transition: 0.3;
 }
-
 
 /* About styling */
 .about .about-content .left {
@@ -162,11 +161,10 @@ section .title::after{
   font-size: 23px;
   cursor: pointer;
   display: none;
-}.navbar.sticky .menu-btn{
+}
+.navbar.sticky .menu-btn {
   color: #fff;
 }
-
-
 /*home-section*/
 .home {
   display: flex;
@@ -201,7 +199,7 @@ section .title::after{
 .projects,
 .teams {
   color: #fff;
-  background: #111;
+  background: #323232;
 }
 .projects .project-content .card {
   width: calc(33% - 20px);
@@ -213,8 +211,8 @@ section .title::after{
   transition: all 0.3s ease;
 }
 .projects .project-content .card:hover {
-  opacity: .5;
-  transition: .3;
+  opacity: 0.5;
+  transition: 0.3;
 }
 .projects .project-content .card .box {
   transition: all 0.3s ease;
@@ -231,6 +229,9 @@ section .title::after{
 /* Contactsection */
 .contact .contact-content .column {
   width: calc(50% - 30px);
+}
+.contact .max-width .right .icons{
+  align-items: center;
 }
 .contact .contact-content .text {
   font-size: 20px;
@@ -275,8 +276,8 @@ section .title::after{
   color: #0e76a8;
 }
 .contact .contact-content .right .fab:hover {
-  opacity: .5;
-  transition: .3;
+  opacity: 0.5;
+  transition: 0.3;
 }
 .contact .contact-content .right .email-btn {
   display: inline-block;
@@ -310,7 +311,7 @@ footer span a:hover {
 }
 
 /* For mobile/tablet */
-@media (max-width: 1028px) {
+@media (max-width: 1024px) {
   .max-width {
     padding: 0 50px;
   }
@@ -318,6 +319,9 @@ footer span a:hover {
     display: block;
     z-index: 999;
   }
+  .menu-btn i.active:before{
+    content: "\f00d";
+}
   .navbar .menu {
     position: fixed;
     background: #323232;
@@ -329,7 +333,7 @@ footer span a:hover {
     padding-top: 80px;
     transition: all 0.3s ease;
   }
-  .navbar .menu.active {
+  .navbar .menu.active{
     left: 0;
   }
   .navbar .menu li {
@@ -341,6 +345,15 @@ footer span a:hover {
     color: #fff;
     font-size: 30px;
   }
+  .about .max-width .right p{
+  margin-left: 30px;
+}
+.about .max-width .right div{
+  margin-left: 30px;
+}
+.about .max-width .right a{
+  margin-left: 30px;
+}
   .projects .project-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
@@ -376,5 +389,14 @@ footer span a:hover {
   }
   .projects .project-content .card {
     width: 100%;
+  }
+}
+
+@media (max-width: 415px) {
+  *{
+    text-align: center;
+  }
+  .contact .max-width .contact-content .left{
+    display: none;
   }
 }
