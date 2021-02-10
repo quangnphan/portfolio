@@ -1,2 +1,2 @@
 # portfolio
-Created fortfolio using tutorials. I will keep updating it with new things while learning.
+Created fortfolio using HTML/CSS and Javascript. Updating while learning.
