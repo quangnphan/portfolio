@@ -225,6 +225,9 @@ section .title::after {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+.projects .project-content .card .a{
+  text-decoration: none;
+}
 
 /* Contactsection */
 .contact .contact-content .icons {
