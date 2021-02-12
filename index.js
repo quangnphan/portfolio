@@ -13,7 +13,7 @@ $(document).ready(function () {
   });
   //typing text animation
   var typed = new Typed(".typing", {
-    strings: ["Student", "Web Developer"],
+    strings: ["CIS graduate", "Web Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
