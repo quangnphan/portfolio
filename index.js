@@ -1,16 +1,22 @@
 $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY > 20) {
-      $('.navbar').addClass("sticky");
+      $(".navbar").addClass("sticky");
     } else {
-      $('.navbar').removeClass("sticky");
+      $(".navbar").removeClass("sticky");
     }
   });
   // toggle menu
-  $('.menu-btn').click(function () {
-    $('.navbar .menu').toggleClass("active");
-    $('.menu-btn i').toggleClass("active");
+  $(".menu-btn").click(function () {
+    $(".navbar .menu").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
   });
+
+  $(".navbar .menu li a").click(function () {
+    $(".navbar .menu").toggleClass("active");
+    $(".menu-btn i").toggleClass("active");
+  });
+
   //typing text animation
   var typed = new Typed(".typing", {
     strings: ["CIS graduate", "Web Developer"],

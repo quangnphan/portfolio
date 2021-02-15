@@ -21,13 +21,13 @@ section {
   margin: auto;
 }
 .about,
-.contact,
+.skill,
 .projects,
 footer {
   font-family: "Poppins", sans-serif;
 }
 .about .about-content,
-.contact .contact-content,
+.skill .skill-content,
 .projects .project-content {
   display: flex;
   flex-wrap: wrap;
@@ -194,10 +194,29 @@ section .title::after {
   color: crimson;
   font-weight: 500;
 }
+.home .home-content .icons {
+  font-size: 70px;
+}
+.home .home-content .icons i {
+  margin: 10px 5px;
+}
+.home-content .fa-github {
+  color: #111;
+}
+.home-content .fa-linkedin {
+  color: #0e76a8;
+}
+.home-content .fa-envelope {
+  color: #51a0d5;
+}
+.home .home-content .fab:hover {
+  opacity: 0.5;
+  transition: 0.3;
+  transform: scale(1.1);
+}
 
 /* projectsection */
-.projects,
-.teams {
+.projects {
   color: #fff;
   background: #323232;
 }
@@ -229,40 +248,64 @@ section .title::after {
 .projects .project-content .card p {
   color: #fff;
 }
-.projects .project-content .card .a{
+.projects .project-content .card .a {
   text-decoration: none;
 }
-.projects .project-content .card .box .project-img{
-  height:150px;
+.projects .project-content .card .box .project-img {
+  height: 150px;
   width: 100%;
   border-radius: 6px;
   object-fit: cover;
 }
 
-/* Contactsection */
-.contact .contact-content .icons {
+/* Skills section */
+.skill .max-width {
+  margin: auto 0 auto 40px;
+}
+.skill .skill-content .text {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-family: "Ubuntu", sans-serif;
+}
+.skill .skill-content .icons {
   font-size: 70px;
-  margin: 10px 0;
 }
-.contact-content .fa-github {
-  color: #111;
+.skill .skill-content .icons i {
+  margin: 10px 10px;
 }
-.contact-content .fa-linkedin {
-  color: #0e76a8;
+.skill-content .fa-html5 {
+  color: #ec6231;
 }
-.contact-content .fa-instagram{
-  color:#cd486b;
+.skill-content .fa-css3-alt {
+  color: #264de4;
 }
-.contact-content .fa-facebook-square{
-  color: #3b5998;
+.skill-content .fa-js-square {
+  color: #ffd43b;
 }
-.contact-content .fa-envelope{
-  color: #4285f4;
+.skill-content .fa-react {
+  color: #61dbfb;
 }
-.contact .contact-content .fab:hover {
-  opacity: 0.5;
-  transition: 0.3;
+.skill-content .fa-bootstrap {
+  color: #563d7c;
 }
+.skill-content .jquery {
+  color: #0868ac;
+  font-size: 60px;
+  font-weight: 700;
+}
+.skill-content .rails {
+  color: #cc0000;
+  font-size: 60px;
+  font-weight: 700;
+}
+.skill-content .fa-node {
+  color: #3c873a;
+}
+.skill-content .fa-database {
+  color: #3f729b;
+}
+
 /* footersection */
 footer {
   background: #323232;
@@ -278,7 +321,7 @@ footer span a:hover {
   text-decoration: underline;
 }
 
-/* For mobile/tablet */
+/* Mobiledevices */
 @media (max-width: 1024px) {
   .max-width {
     padding: 0 50px;
@@ -289,6 +332,7 @@ footer span a:hover {
   }
   .menu-btn i.active:before {
     content: "\f00d";
+    color: white;
   }
   .navbar .menu {
     position: fixed;
@@ -360,8 +404,19 @@ footer span a:hover {
   }
 }
 
-@media (max-width: 415px) {
-  * {
-    text-align: center;
-  }
+@media (max-width: 500px) {
+  .home .home-content .text-2{
+    font-size: 50px;
 }
+.home .home-content .text-3{
+    font-size: 27px;
+}
+.about .about-content .right .text{
+    font-size: 19px;
+}
+.about .about-content .right p{
+  text-align: left;
+  font-size: 19px;
+}
+}
+
