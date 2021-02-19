@@ -24,4 +24,7 @@ $(document).ready(function () {
     backSpeed: 60,
     loop: true,
   });
+
+  //yearchanged
+  $(".copyright").text(new Date().getFullYear());
 });
