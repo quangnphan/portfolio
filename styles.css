@@ -223,6 +223,7 @@ section .title::after {
   padding: 20px 25px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 18px 0;
 }
 .project .project-content .card:hover {
   opacity: 0.5;
