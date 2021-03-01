@@ -369,8 +369,9 @@ footer a:hover {
 }
 
 @media (max-width: 700px) {
-  max-width {
+  .max-width {
     padding: 0 23px;
+    max-width: 930px;
   }
   .home .home-content .text-2 {
     font-size: 60px;
@@ -380,9 +381,6 @@ footer a:hover {
   }
   .navbar .max-width .logo {
     padding-left: 40px;
-  }
-  .max-width {
-    max-width: 930px;
   }
   .about .about-content .column {
     width: 100%;
