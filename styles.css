@@ -274,10 +274,6 @@ section .title::after {
   font-size: 60px;
   font-weight: 700;
 }
-.skill-content .rails {
-  font-size: 60px;
-  font-weight: 700;
-}
 .skill .skill-content .text {
   font-size: 12px;
   font-weight: 400;
