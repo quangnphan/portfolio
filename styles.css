@@ -368,9 +368,6 @@ footer a:hover {
   .home .home-content .text-3 {
     font-size: 32px;
   }
-  .navbar .max-width .logo {
-    padding-left: 40px;
-  }
   .about .about-content .column {
     width: 100%;
   }
@@ -409,5 +406,8 @@ footer a:hover {
   .about .about-content .right p {
     text-align: left;
     font-size: 19px;
+  }
+  .home .max-width {
+    margin: auto 0;
   }
 }
