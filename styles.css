@@ -253,6 +253,9 @@ section .title::after {
   border-radius: 6px;
   object-fit: cover;
 }
+.landing-page{
+  margin-top: 100px;
+}
 
 /* Skills section */
 .skill .skill-content .icons-wrapper {
