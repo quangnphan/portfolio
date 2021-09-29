@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuangPhan</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Jquery FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/298eb801f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="max-width">
+        <div class="logo">
+          <a href="#">Portfo<span>lio.</span></a>
+        </div>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#skill">Skills</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <div class="max-width">
+        <div class="home-content">
+          <div class="text-1">Hello, I'm</div>
+          <div class="text-2">Quang Phan</div>
+          <div class="text-3">a <span class="typing"></span></div>
+          <div class="icons">
+            <a href="https://github.com/quangnphan"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://linkedin.com/in/qp2194"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="mailto:qp2194@gmail.com"
+              ><i class="fab fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="max-width">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+          <div class="column left">
+            <img src="images/quang.jpg" alt="quangphan" />
+          </div>
+          <div class="column right">
+            <div class="text">I am Quang.</div>
+            <p>
+              A Computer Information Systems graduate and I love to code.
+              Knowledge in database management, web development life cycle,
+              in-depth understanding of building responsive websites using
+              front-end frameworks. I desire to use my good work ethics,
+              willingness to learn, and skills that I gained from education to
+              grow as a developer.
+            </p>
+            <a href="files/Resume.pdf" download="Resume"
+              ><i class="fas fa-arrow-circle-down"></i>
+
+              Download Resumé</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projectsection -->
+    <section class="project" id="project">
+      <div class="max-width">
+        <h2 class="title">Apps/Games</h2>
+        <div class="project-content">
+          <div class="card">
+            <a
+              href="https://quangnphan.github.io/cocktail-project/"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/cocktails.png"
+                  alt="iptracker"
+                />
+                <div class="text">Cocktail Project</div>
+                <p>
+                  A cocktails database fetch from JSON Api, built with Reactjs.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://quangnphan.github.io/tip-calculator/"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/tip-calculator.png"
+                  alt="iptracker"
+                />
+                <div class="text">Tip Calculator</div>
+                <p>Calculate your tip with a simple web app using Reactjs.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://iptracker-ivxf356xx-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/iptracker.png"
+                  alt="iptracker"
+                />
+                <div class="text">IP Address Tracker</div>
+                <p>
+                  An app to track IP Address locations using IP Geolocation API
+                  and LeafletJS.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://todo-app-fementor-rc60gijyw-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/todolistv2.png"
+                  alt="todolistv2"
+                />
+                <div class="text">Todo App(no database)</div>
+                <p>
+                  A todo app with filters, theme switch, drag and drop to
+                  reorder items.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://intense-wildwood-50141.herokuapp.com"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/todolist.png"
+                  alt="todolist"
+                />
+                <div class="text">Todo App(with database)</div>
+                <p>Using MongoDB for the back-end and hosted on Heroku.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://rock-paper-scissors-ap5cpgrae-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/rockpaper.png"
+                  alt="rockpaper"
+                />
+                <div class="text">Rock, Paper, and Scissors</div>
+                <p>A simple game built with vanilla Javascript.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://calculator-298o5yyya-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/calculator.png"
+                  alt="calculator"
+                />
+                <div class="text">Calculator App</div>
+                <p>A simple calculator app with themes switcher.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://countdown-timer-2b96aezfp-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/countdown.png"
+                  alt="countdown"
+                />
+                <div class="text">Countdown timer</div>
+                <p>Launch countdown timer that ticks down every second.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://job-listing-fkxbbamvp-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/jobs-filtering.png"
+                  alt="job-filtering"
+                />
+                <div class="text">Job Listings</div>
+                <p>Job listings with filtering using vanilla JS.</p>
+              </div>
+            </a>
+          </div>
+          
+          <div class="card">
+            <a href="https://k9p8j.csb.app/" target="_blank">
+              <div class="box">
+                <img class="project-img" src="images/keeper.png" alt="keeper" />
+                <div class="text">Keeper App</div>
+                <p>A clone of Google Keep made with React, Material-ui.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="https://quangnphan.github.io/drumkit" target="_blank">
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/drumkit.png"
+                  alt="drumkit"
+                />
+                <div class="text">Drumkit JS</div>
+                <p>Javascript drum kit app that runs in the browser.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="https://quangnphan.github.io/simongame" target="_blank">
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/simongame.png"
+                  alt="simongame"
+                />
+                <div class="text">Simon Game</div>
+                <p>A simple Javascript game to test your memory.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://darktheme-switcher-drasibhla-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/themeswitcher.png"
+                  alt="themeswitcher"
+                />
+                <div class="text">Theme Switcher</div>
+                <p>A social media dashboard with theme switcher.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://pricing-component-toggle-o4i11fch2-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/pricing-toggle.png"
+                  alt="pricing-toggle"
+                />
+                <div class="text">Pricing Component</div>
+                <p>Pricing component with toggle.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://chat-app-illustration-dig1m16n4-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/chatapp-page.png"
+                  alt="chatapp-page"
+                />
+                <div class="text">Chat App CSS</div>
+                <p>This is made mostly with CSS to test layout skills.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <h2 class="title landing-page">Landing Pages</h2>
+        <div class="project-content">
+          <div class="card">
+            <a
+              href="https://url-shortening-page-3gc2fqi7j-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/shortening.png"
+                  alt="shortening"
+                />
+                <div class="text">URL Shortening</div>
+                <p>A landing page that shorten any valid URL.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://easybank-challenge-phhxrsn8h-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/easybank.png"
+                  alt="easybank"
+                />
+                <div class="text">Easybank Landing Page</div>
+                <p>A landing page using HTML, CSS, and Javascript.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://bookmark-landing-owiile65y-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/bookmark-landing.png"
+                  alt="bookmark-landing"
+                />
+                <div class="text">Bookmark Landing Page</div>
+                <p>A landing page with expand/collapse faq accordion.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://manage-landing-page-h20i90ar6-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/manage-landing.png"
+                  alt="manage-landing-page"
+                />
+                <div class="text">Manage Landing Page</div>
+                <p>Landing page with jQuery and Slick Carousel.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://sunnyside-landing-page-qn15mkg6p-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/sunnyside.png"
+                  alt="sunnyside"
+                />
+                <div class="text">Sunnyside page</div>
+                <p>Simple landing page with css grid and flex-box.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a href="https://quangnphan.github.io/tindog" target="_blank">
+              <div class="box">
+                <img class="project-img" src="images/tindog.png" alt="tindog" />
+                <div class="text">Tindog Page</div>
+                <p>A product landing page made with Bootstrap.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://crowdfunding-product-page-p4zn0bnvx-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/crowdfunding.png"
+                  alt="crowdfunding"
+                />
+                <div class="text">Crowndfunding Page</div>
+                <p>Crowndfunding landing page with modal states.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://loopstudio-mhqm2jdi7-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/loopstudio.png"
+                  alt="loopstudio"
+                />
+                <div class="text">Loopstudio</div>
+                <p>
+                  View the optimal layout for the site depending on the screen.
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://huddle-landing-page-cic9ezfan-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img class="project-img" src="images/huddle.png" alt="huddle" />
+                <div class="text">Huddle Landing Page</div>
+                <p>Landing page with alternating feature blocks.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://insure-landing-page-3vmxprzp0-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/insure-landing.png"
+                  alt="insure-landing"
+                />
+                <div class="text">Insure Landing Page</div>
+                <p>Insure landing page with HTML, CSS and Javascript.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://fylo-darktheme-landing-page-2th5lwjbh-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/fylodark.png"
+                  alt="fylodark"
+                />
+                <div class="text">Fylo Dark Theme</div>
+                <p>Landing page with dark theme and features grid.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://project-tracking-intro-component-k6wrnigpb-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/projectcomponent.png"
+                  alt="introcomp"
+                />
+                <div class="text">Intro Component</div>
+                <p>Simple project tracking intro component.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://blogr-landing-page-owewr605u-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img class="project-img" src="images/blogr.png" alt="blogr" />
+                <div class="text">Blogr</div>
+                <p>Focus on HTML & CSS, use Javascript for the mobile menu.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://fylo-landing-page-two-column-d9y38neq8-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/fylo2column.png"
+                  alt="fylo2column"
+                />
+                <div class="text">Fylo Two Column</div>
+                <p>Landing page with two column layout.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://clipboard-landing-page-himg19m41-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/clipboard.png"
+                  alt="clipboard"
+                />
+                <div class="text">Clipboard</div>
+                <p>Clipboard landing page.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card">
+            <a
+              href="https://sign-up-frontendmentor-hjux9n5gj-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/signup-form.png"
+                  alt="signup-form"
+                />
+                <div class="text">Sign Up Form</div>
+                <p>Sign up form with email validation using Javascript.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section class="skill" id="skill">
+      <div class="max-width">
+        <h2 class="title">Skills</h2>
+        <div class="skill-content">
+          <div class="icons-wrapper">
+            <div class="icons front-end">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js-square"></i>
+              <i class="fab fa-react"></i>
+              <i class="fab fa-bootstrap"></i>
+              <i class="jquery"><em>jQuery</em></i>
+            </div>
+            <div class="icons back-end">
+              <i class="fab fa-node"></i>
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="text">
+              <p>
+                To access all the projects and source code, please go to my
+                github page at
+                <a href="https://github.com/quangnphan">
+                  https://github.com/quangnphan</a
+                >.
+              </p>
+              <p>Feel free to leave any feedback.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footersection -->
+    <footer>
+      <span class="copyright far fa-copyright"></span
+      ><a href="#"> Quang Phan</a>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </body>
+</html>
