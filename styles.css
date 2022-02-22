@@ -65,7 +65,7 @@ section .title::after {
   z-index: 999;
   padding: 30px 0;
   font-family: "Ubuntu", sans-serif;
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 .navbar.sticky {
   padding: 15px 0;
@@ -104,16 +104,16 @@ section .title::after {
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
-  transition: color 0.3s ease;
+  transition: color 0.7s ease;
 }
 .navbar .menu li a:hover {
   opacity: 0.5;
-  transition: 0.3;
+  transition: 0.7;
 }
 
 /* About styling */
 .about .about-content .left {
-  width: 45%;
+  width: 30%;
 }
 .about .about-content .left img {
   height: 300px;
@@ -122,16 +122,11 @@ section .title::after {
   object-fit: cover;
 }
 .about .about-content .right {
-  width: 55%;
-}
-.about .about-content .right .text {
-  font-size: 25px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  width: 70%;
 }
 .about .about-content .right p {
   text-align: inherit;
-  font-size: 20px;
+  font-size: 13px;
   margin: 5px 0;
 }
 .about .about-content .right a {
@@ -144,11 +139,59 @@ section .title::after {
   margin-top: 20px;
   border-radius: 6px;
   border: 2px solid;
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 .about .about-content .right a:hover {
   color: #323232;
   background: none;
+}
+.resume{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.resume-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: rgb(245, 245, 245);
+  padding: 15px;
+}
+.resume-header h2{
+  font-size: xx-large;
+  color: rgb(87, 86, 86);
+}
+.resume-header p{
+  color:rgb(94, 94, 94);
+}
+.resume-header .header-right{
+  text-align: right;
+}
+.resume-info{
+  padding: 15px;
+}
+.resume-section{
+  margin-bottom: 15px;
+}
+.resume-section hr{
+  margin-bottom: 10px;
+}
+.resume-info .resume-section h3{
+  text-align: center;
+  text-transform: uppercase;
+}
+.employment{
+  display: flex;
+  justify-content: space-between;
+}
+.employment h5{
+  color: rgb(158, 158, 158);
+  font-style: italic;
+  font-weight: 600;
+}
+.resume-section ul{
+  padding-left: 15px;
+}
+.resume-section li{
+  font-size: 13px;
 }
 
 /* menu styling */
@@ -207,7 +250,7 @@ section .title::after {
 }
 .home .home-content .fab:hover {
   opacity: 0.5;
-  transition: 0.3;
+  transition: 0.7;
   transform: scale(1.1);
 }
 
@@ -223,15 +266,15 @@ section .title::after {
   border-radius: 6px;
   padding: 20px 25px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
   margin: 18px 0;
 }
 .project .project-content .card:hover {
   opacity: 0.5;
-  transition: 0.3;
+  transition: 0.7;
 }
 .project .project-content .card .box {
-  transition: all 0.3s ease;
+  transition: all 0.7s ease;
 }
 .project .project-content .card:hover .box {
   transform: scale(1.05);
@@ -253,9 +296,6 @@ section .title::after {
   width: 100%;
   border-radius: 6px;
   object-fit: cover;
-}
-.landing-page{
-  margin-top: 100px;
 }
 
 /* Skills section */
@@ -328,7 +368,7 @@ footer a:hover {
     top: 0;
     text-align: center;
     padding-top: 80px;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
   }
   .navbar .menu.active {
     left: 0;
@@ -342,14 +382,13 @@ footer a:hover {
     color: #fff;
     font-size: 30px;
   }
-  .about .max-width .right p {
-    margin-left: 30px;
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
   }
-  .about .max-width .right div {
-    margin-left: 30px;
-  }
-  .about .max-width .right a {
-    margin-left: 30px;
+  .about .about-content .right {
+    flex: 100%;
   }
   .project .project-content .card {
     width: calc(50% - 10px);
@@ -371,22 +410,23 @@ footer a:hover {
   .about .about-content .column {
     width: 100%;
   }
-  .about .about-content .left {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 60px;
-  }
-  .about .about-content .right {
-    flex: 100%;
-  }
-  .about .about-content .right div {
-    margin-left: 20px;
-  }
   .about .about-content .right p {
-    margin-left: 20px;
+    font-size: 10px;
   }
-  .about .about-content .right a {
-    margin-left: 20px;
+  .resume li{
+    font-size: 10px;
+  }
+  .resume-info .resume-section h3{
+    font-size: 15px;
+  }
+  .resume-info .resume-section h4{
+    font-size: 13px;
+  }
+  .resume-info .resume-section h5{
+    font-size: 11px;
+  }
+  .resume h2{
+    font-size: 22px;
   }
   .project .project-content .card {
     width: 100%;
@@ -399,13 +439,6 @@ footer a:hover {
   }
   .home .home-content .text-3 {
     font-size: 27px;
-  }
-  .about .about-content .right .text {
-    font-size: 19px;
-  }
-  .about .about-content .right p {
-    text-align: left;
-    font-size: 19px;
   }
   .home .max-width {
     margin: auto 0;
