@@ -162,10 +162,6 @@ section .title::after {
 .resume-header p{
   color:rgb(94, 94, 94);
 }
-.resume-header span{
-  color: rgb(94, 94, 94);
-  font-size: 13px;
-}
 .resume-header .header-right{
   text-align: right;
 }
