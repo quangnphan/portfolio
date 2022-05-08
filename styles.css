@@ -317,8 +317,8 @@ section .white::before{
   margin: 8px;
   margin-bottom: 10px;
 }
-.skill-content .jquery {
-  font-size: 60px;
+.skill-content .text-icon {
+  font-size: 40px;
   font-weight: 700;
 }
 .skill .skill-content .text {
