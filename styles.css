@@ -4,8 +4,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-html {
+html,body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .max-width {
   max-width: 1300px;
@@ -115,7 +116,7 @@ section .white::before{
 }
 
 /* About styling */
-.about .about-content .left {
+/* .about .about-content .left {
   width: 30%;
 }
 .about .about-content .left img {
@@ -126,13 +127,16 @@ section .white::before{
 }
 .about .about-content .right {
   width: 70%;
+} */
+.about .about-content{
+  justify-content: center;
 }
-.about .about-content .right p {
+.about .about-content p {
   text-align: inherit;
   font-size: 13px;
   margin: 5px 0;
 }
-.about .about-content .right a {
+.about .about-content a {
   display: inline-block;
   background: #323232;
   color: #fff;
@@ -144,12 +148,19 @@ section .white::before{
   border: 2px solid;
   transition: all 0.7s ease;
 }
-.about .about-content .right a:hover {
+.about .about-content a:hover {
   color: #323232;
   background: none;
 }
+.about .about-content .column{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center; 
+}
 .resume{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  max-width: 900px;
 }
 .resume-header{
   display: flex;
@@ -210,7 +221,7 @@ section .white::before{
 /*home-section*/
 .home {
   display: flex;
-  background: url("images/macbookcoffee.jpeg") no-repeat center;
+  background: url("images/bg.jpeg") no-repeat center;
   background-size: cover;
   height: 100vh;
   color: #111;
@@ -223,14 +234,17 @@ section .white::before{
 }
 .home .home-content .text-1 {
   font-size: 30px;
+  text-shadow: white 0 0 10px;
 }
 .home .home-content .text-2 {
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 600;
+  text-shadow: white 0 0 10px;
 }
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
+  text-shadow: white 0 0 10px;
 }
 .home .home-content .text-3 span {
   color: crimson;
@@ -350,7 +364,35 @@ footer a:hover {
   text-decoration: underline;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background: rgba(0,0,0,0.9);
+  backdrop-filter: saturate(180%) blur(1px);
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  height: 40px;
+  width: 40px;
+  padding-top: 5px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 /* Mobiledevices */
+@media(max-width: 1500px){
+  .home{
+    background-position: right center;
+  }
+}
 @media (max-width: 1024px) {
   .max-width {
     padding: 0 50px;
@@ -368,18 +410,21 @@ footer a:hover {
     background: rgba(0,0,0,0.9);
     backdrop-filter: saturate(180%) blur(1px);
     height: 100vh;
-    width: 100%;
-    left: -100%;
-    top: 0;
+    width: 100vw;
+    left: 0;
+    top: -100vh;
     text-align: center;
-    padding-top: 80px;
+    padding: 120px 50px 0;
     transition: all 0.4s ease;
   }
   .navbar .menu.active {
-    left: 0;
+    top: 0;
   }
   .navbar .menu li {
     display: block;
+  }
+  .navbar .menu li:not(:last-child){
+    border-bottom: 1px solid white;
   }
   .navbar .menu li a {
     display: inline-block;
@@ -387,21 +432,33 @@ footer a:hover {
     color: #fff;
     font-size: 30px;
   }
-  .about .about-content .left {
+  /* .about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
   .about .about-content .right {
     flex: 100%;
-  }
+  } */
   .project .project-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
 }
-
+@media(max-width:830px){
+  .home{
+    background-position: right -50px center;
+  }
+  .home .home-content .text-2{
+    max-width: 150px;
+  }
+}
 @media (max-width: 768px) {
+  .home{
+    background: url("images/bg-tablet.jpeg") no-repeat center;
+    background-size: cover;
+    background-position: right -100px center;
+  }
   .max-width {
     padding: 0 23px;
     max-width: 930px;
@@ -438,14 +495,18 @@ footer a:hover {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  .home{
+    background: url("images/bg-mobile.jpeg") no-repeat center;
+    background-size: cover;
+  }
   .home .home-content .text-2 {
-    font-size: 50px;
+    font-size: 55px;
   }
   .home .home-content .text-3 {
     font-size: 27px;
   }
-  .home .max-width {
+  .home .max-width{
     margin: auto 0;
   }
 }
