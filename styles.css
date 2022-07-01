@@ -161,13 +161,18 @@ section .white::before{
 .resume{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   max-width: 900px;
+  margin-bottom: 30px;
 }
 .resume-header{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(235, 235, 235);
   padding: 15px;
+  line-height: 1.3;
+}
+.resume-header p{
+  font-size: 12px !important;
 }
 .resume-header h2{
   font-size: xx-large;
@@ -183,29 +188,39 @@ section .white::before{
   padding: 15px;
 }
 .resume-section{
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  line-height: 1.3;
 }
 .resume-section hr{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .resume-info .resume-section h3{
   text-align: center;
   text-transform: uppercase;
+  font-size: 15px;
 }
 .employment{
   display: flex;
   justify-content: space-between;
+  margin-top: 5px;
+}
+.employment p{
+  font-size: 11px !important;
+}
+.employment h4{
+  font-size: 13px;
 }
 .employment h5{
   color: rgb(158, 158, 158);
   font-style: italic;
   font-weight: 600;
+  font-size: 11px;
 }
 .resume-section ul{
   padding-left: 15px;
 }
 .resume-section li{
-  font-size: 13px;
+  font-size: 11px;
 }
 
 /* menu styling */
@@ -234,17 +249,17 @@ section .white::before{
 }
 .home .home-content .text-1 {
   font-size: 30px;
-  text-shadow: white 0 0 10px;
+  text-shadow: white 0 0 20px;
 }
 .home .home-content .text-2 {
   font-size: 90px;
   font-weight: 600;
-  text-shadow: white 0 0 10px;
+  text-shadow: white 0 0 20px;
 }
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
-  text-shadow: white 0 0 10px;
+  text-shadow: white 0 0 20px;
 }
 .home .home-content .text-3 span {
   color: crimson;
@@ -252,6 +267,16 @@ section .white::before{
 }
 .home .home-content .icons {
   font-size: 70px;
+  background-color: rgba(139, 126, 126, 0.15);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.5rem;
+  padding: 0 15px;
+  margin-top: 30px;
+  position: relative;
+  width: 350px;
 }
 .home .home-content .icons i {
   margin: 10px 5px;
@@ -266,7 +291,7 @@ section .white::before{
   color: #51a0d5;
 }
 .home .home-content .fab:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   transition: 0.7;
   transform: scale(1.1);
 }
@@ -367,8 +392,8 @@ footer a:hover {
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 10px; /* Place the button at the bottom of the page */
-  right: 10px; /* Place the button 30px from the right */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 20px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -380,7 +405,6 @@ footer a:hover {
   font-size: 18px; /* Increase font size */
   height: 40px;
   width: 40px;
-  padding-top: 5px;
 }
 
 #myBtn:hover {
@@ -463,6 +487,10 @@ footer a:hover {
     padding: 0 23px;
     max-width: 930px;
   }
+  .home .home-content .icons {
+    font-size: 60px;
+    width: 300px;
+  }
   .home .home-content .text-2 {
     font-size: 60px;
   }
@@ -496,9 +524,20 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
+  .max-width{
+   padding: 0 15px;
+  }
+  .navbar .menu{
+    padding: 120px 20px;
+  }
   .home{
     background: url("images/bg-mobile.jpeg") no-repeat center;
     background-size: cover;
+  }
+  .home .home-content .icons {
+    font-size: 55px;
+    width: 270px;
+    margin-top: 20px;
   }
   .home .home-content .text-2 {
     font-size: 55px;
@@ -508,5 +547,47 @@ footer a:hover {
   }
   .home .max-width{
     margin: auto 0;
+  }
+  .resume{
+    margin-bottom: 0;
+  }
+  .resume-header{
+    padding: 8px;
+    line-height: 1;
+  }
+  .resume-header p{
+    font-size: 8px !important;
+  }
+  .resume-section{
+    line-height: 1.2;
+    margin-bottom: 3px;
+  }
+  .resume-info{
+    padding: 8px;
+  }
+  .resume-info li{
+    font-size: 8px;
+  }
+  .resume-info .resume-section h3{
+    font-size: 13px;
+  }
+  .employment p{
+    font-size: 8px !important;
+  }
+  .employment h4{
+    font-size: 11px !important;
+  }
+  .employment h5{
+    font-size: 10px !important;
+  }
+}
+
+@media (max-width: 300px){
+  .max-width{
+    padding: 0 10px;
+    margin: auto;
+  }
+  .home .home-content .icons{
+    width: 250px;
   }
 }
