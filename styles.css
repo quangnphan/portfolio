@@ -234,16 +234,16 @@ section .white::before{
   transition: all 0.25s;
 }
 .menu-btn .line {
-  height: 30px;
-  width: 30px;
+  height: 26px;
+  width: 20px;
   position: absolute;
   left: 4px;
   top: 4px;
   transition: transform 0.2s ease-in-out;
 }
 .menu-btn .line-inner {
-  height: 4px;
-  width: 32px;
+  height: 2px;
+  width: 20px;
   background: #111;
   border-radius: 4px;
   position: absolute;
@@ -385,14 +385,13 @@ section .white::before{
 
 /* Skills section */
 .skill .skill-content .icons-wrapper {
-  font-size: 30px;
   font-weight: 500;
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   width: 100%;
 }
 .skill .skill-content .icons {
-  font-size: 70px;
+  font-size: 45px;
   color: #86868b;
 }
 .skill .skill-content .icons i {
@@ -400,7 +399,7 @@ section .white::before{
   margin-bottom: 10px;
 }
 .skill-content .text-icon {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 700;
 }
 .skill .skill-content .text {
@@ -478,7 +477,7 @@ footer a:hover {
     top: -100vh;
     text-align: center;
     padding: 120px 50px 0;
-    transition: all 0.4s ease;
+    transition: all 0.6s ease;
   }
   .navbar .menu.active {
     top: 0;
