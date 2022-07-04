@@ -9,12 +9,12 @@ $(document).ready(function () {
   // toggle menu
   $(".menu-btn").click(function () {
     $(".navbar .menu").toggleClass("active");
-    $(".menu-btn i").toggleClass("active");
+    $(".menu-btn").toggleClass("open");
   });
 
   $(".navbar .menu li a").click(function () {
     $(".navbar .menu").toggleClass("active");
-    $(".menu-btn i").toggleClass("active");
+    $(".menu-btn").toggleClass("open");
   });
 
   //typing text animation

@@ -226,12 +226,55 @@ section .white::before{
 /* menu styling */
 .menu-btn {
   color: #111;
-  font-size: 23px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   display: none;
+  position: relative;
+  transition: all 0.25s;
 }
-.navbar.sticky .menu-btn {
-  color: #fff;
+.menu-btn .line {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  transition: transform 0.2s ease-in-out;
+}
+.menu-btn .line-inner {
+  height: 4px;
+  width: 32px;
+  background: #111;
+  border-radius: 4px;
+  position: absolute;
+  transition: transform 0.2s ease-in-out;
+}
+.menu-btn .line-inner-1 {
+  top: 12px;
+  transform: translateY(-5px);
+}
+
+.menu-btn .line-inner-2 {
+  bottom: 12px;
+  transform: translateY(5px);
+}
+
+.menu-btn.open .line-1 {
+  transform: rotateZ(45deg);
+}
+
+.menu-btn.open .line-2 {
+  transform: rotateZ(-45deg);
+}
+
+.menu-btn.open .line-inner {
+  background: #fff;
+  transform: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar.sticky .menu-btn .line-inner{
+  background: #fff;
 }
 /*home-section*/
 .home {
@@ -424,10 +467,6 @@ footer a:hover {
   .menu-btn {
     display: block;
     z-index: 999;
-  }
-  .menu-btn i.active:before {
-    content: "\f00d";
-    color: white;
   }
   .navbar .menu {
     position: fixed;
