@@ -22,6 +22,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   </head>
 
   <body>
@@ -240,7 +244,7 @@
       <div class="max-width">
         <h2 class="title white">Projects</h2>
         <div class="project-content">
-          <div class="card" data-aos="fade-right">
+          <div class="card" data-aos="fade-left">
             <a
               href="https://quangnphan.github.io/cocktail-project/"
               target="_blank"
@@ -249,12 +253,29 @@
                 <img
                   class="project-img"
                   src="images/cocktails.png"
-                  alt="iptracker"
+                  alt="cocktail img"
                 />
                 <div class="text">Cocktail Project</div>
                 <p>
                   A cocktails database fetch from JSON Api, built with Reactjs
                 </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="card" data-aos="fade-right">
+            <a
+              href="https://admin-dashboard-qp.netlify.app"
+              target="_blank"
+            >
+              <div class="box">
+                <img
+                  class="project-img"
+                  src="images/admin-dashboard.png"
+                  alt="youtube"
+                />
+                <div class="text">Admin Dashboard</div>
+                <p>Built with Reactjs, Tailwind, and syncfusion</p>
               </div>
             </a>
           </div>
@@ -296,39 +317,7 @@
             </a>
           </div>
 
-          <div class="card" data-aos="fade-left">
-            <a href="https://lucent-pudding-30b7df.netlify.app" target="_blank">
-              <div class="box">
-                <img
-                  class="project-img"
-                  src="images/restaurant.png"
-                  alt="restaurant-page"
-                />
-                <div class="text">Restaurant Page</div>
-                <p>
-                  Used React, React-icons to transform a Figma design to a fully
-                  functional website
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <div class="card" data-aos="fade-right">
-            <a
-              href="https://url-shortening-page-3gc2fqi7j-quangnphan.vercel.app"
-              target="_blank"
-            >
-              <div class="box">
-                <img
-                  class="project-img"
-                  src="images/shortening.png"
-                  alt="shortening"
-                />
-                <div class="text">URL Shortening</div>
-                <p>A landing page that shorten any valid URL</p>
-              </div>
-            </a>
-          </div>
+          
 
           <div class="card" data-aos="fade-left">
             <a
@@ -339,7 +328,7 @@
                 <img
                   class="project-img"
                   src="images/rest-countries.png"
-                  alt="iptracker"
+                  alt="rest api"
                 />
                 <div class="text">Rest Countries Api</div>
                 <p>
@@ -379,20 +368,58 @@
                 <img
                   class="project-img"
                   src="images/tip-calculator.png"
-                  alt="iptracker"
+                  alt="tip cal"
                 />
                 <div class="text">Tip Calculator</div>
                 <p>Calculate your tip with a simple web app using Reactjs</p>
               </div>
             </a>
           </div>
+        </div>
+        <h2 style="margin-top: 70px;" class="title white">Landing Pages</h2>
+        <div class="slider"
+        data-slick
+        >
+          <div class="slider-card">
+            <a href="https://lucent-pudding-30b7df.netlify.app" target="_blank">
+              <div class="slider-box">
+                <img
+                  class="project-img"
+                  src="images/restaurant.png"
+                  alt="restaurant-page"
+                />
+                <div class="text">Restaurant Page</div>
+                <p>
+                  Used React, React-icons to transform a Figma design to a fully
+                  functional website
+                </p>
+              </div>
+            </a>
+          </div>
 
-          <div class="card" data-aos="fade-left">
+          <div class="slider-card">
+            <a
+              href="https://url-shortening-page-3gc2fqi7j-quangnphan.vercel.app"
+              target="_blank"
+            >
+              <div class="slider-box">
+                <img
+                  class="project-img"
+                  src="images/shortening.png"
+                  alt="shortening"
+                />
+                <div class="text">URL Shortening</div>
+                <p>A landing page that shorten any valid URL</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="slider-card">
             <a
               href="https://easybank-challenge-phhxrsn8h-quangnphan.vercel.app"
               target="_blank"
             >
-              <div class="box">
+              <div class="slider-box">
                 <img
                   class="project-img"
                   src="images/easybank.png"
@@ -404,12 +431,12 @@
             </a>
           </div>
 
-          <div class="card" data-aos="fade-left">
+          <div class="slider-card">
             <a
               href="https://loopstudio-mhqm2jdi7-quangnphan.vercel.app"
               target="_blank"
             >
-              <div class="box">
+              <div class="slider-box">
                 <img
                   class="project-img"
                   src="images/loopstudio.png"
@@ -423,6 +450,7 @@
             </a>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -473,6 +501,7 @@
 
     <script src="index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
 </html>
