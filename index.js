@@ -49,7 +49,7 @@ $(document).ready(function () {
 
   //typing text animation
   var typed = new Typed(".typing", {
-    strings: ["Frontend Developer", "CIS Grad"],
+    strings: ["Front-End Developer", "CIS Grad"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
