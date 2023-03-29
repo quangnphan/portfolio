@@ -94,7 +94,7 @@
             <img src="images/quang.jpg" alt="quangphan" />
           </div> -->
           <div class="column right">
-            <div class="resume" data-aos="slide-right" data-aos-duration="1000">
+            <div class="resume" data-aos="flip-left" data-aos-duration="2500" data-aos-easing="ease-out-cubic">
               <div class="resume-header">
                 <div class="header-left">
                   <h2>Quang Phan</h2>
@@ -113,44 +113,58 @@
                   <hr />
                   <div class="employment">
                     <div>
-                      <h4>FRONT-END WEB DEVELOPER</h4>
+                      <h4>Front End Web Developer</h4>
                       <h5>HTH Communications</h5>
                     </div>
-                    <p>Mar 2022 - Present</p>
+                    <p>Feb 2022 - Mar 2023</p>
                   </div>
                   <ul>
                     <li>
-                      Created multi-page forms, front-end functions sending
-                      email/sms that helped more than 30,000 customers
-                      re-certify to keep their services, buying new devices,
-                      paying invoices when necessary
+                      Collaborated with cross-functional teams to develop
+                      web-based applications using JavaScript, HTML, and CSS
                     </li>
                     <li>
-                      Maintain E-Commerce web applications with over 300,000
-                      active customers that selling mobile devices and providing
-                      5G/4G data for people qualified through government
-                      programs
+                      Maintained E-Commerce web applications for over 350,000+
+                      customers from Government contract
                     </li>
                     <li>
-                      Work with backend developers, web designers creating new
-                      UI components, features, functionality such as building
-                      dashboard, calling API, adding payment method, customizing
-                      and filtering table
+                      Created multi-page forms, and collected consents to help
+                      30,000+ customers re-certify the service
                     </li>
                     <li>
-                      Build in-house apps, OSS, CRM systems using
-                      React/Typescript, SCSS, Ant Design Pro, MySQL language
-                      help import/export data, modify orders, customers
-                      information
+                      Integrated Stripe payment gateway to enhance payment
+                      process
                     </li>
                     <li>
-                      Assist the development team in updating web content, web
-                      inventory
+                      Created dynamic user experiences through the use of the
+                      front-end framework such as Nextjs, Reactjs
+                    </li>
+                    <li>
+                      Collaborated with back-end developers, and UI designers to
+                      add new UI components, features, and functionality to
+                      existing products using React framework, SCSS, and Ant
+                      library
+                    </li>
+                    <li>Designed responsive emails using Mailjet</li>
+                    <li>
+                      Coordinated cross-functional teams of developers,
+                      designers, and testers using Agile methodologies,
+                      including Scrum, to deliver high-quality products on time
+                      and within budget
+                    </li>
+                    <li>
+                      Provided technical support and troubleshooting assistance
+                      to users and stakeholders
+                    </li>
+                    <li>
+                      Prioritized and managed product backlog, ensuring timely
+                      delivery of high-quality features, and regularly
+                      communicated progress and updates to stakeholders
                     </li>
                   </ul>
                   <div class="employment">
                     <div>
-                      <h4>IT SUPPORT</h4>
+                      <h4>IT Support</h4>
                       <h5>HTH Communications</h5>
                     </div>
                     <p>Feb 2022 - Present</p>
@@ -176,30 +190,26 @@
                   <hr />
                   <ul>
                     <li>
-                      Youtube App - watch videos directly from any devices,
+                      <strong>MERN Stack E-Commerce</strong> - Designed a full stack e-commerce web application using Reactjs, Material UI for the frontend. Redux toolkit for
+                      state management. Mongodb & Mongoose for database, Express.js as a Nodejs framework for the backend
+                      service hosted on Render
+                    </br>
+                      Used Stripejs to tokenize payment information, collect and accept payments
+                    </br>
+                      The app will retrieve JSON data to display products. Users will be able to buy products, modify cart and checkout. Orders and payment confirmation will be stored in an actual database using Mongodb
+                    </li>
+                    <li>
+                      <strong>Youtube App</strong> - watch videos directly from any devices,
                       fully responsive, allow users to search for any YouTube
                       videos, filter categories using axios to fetch, Material
                       UI for layout
                     </li>
                     <li>
-                      Music Player - Built with Reactjs, Redux Toolkit,
+                      <strong>Music Player</strong> - Built with Reactjs, Redux Toolkit,
                       Tailwind, Vitejs. Listen to music, get top charts and top
                       artists around the world, allow users to play/pause any
                       songs, turn volume up and down, move to next/previous
                       song...
-                    </li>
-                    <li>
-                      Multipage e-commerce - allow users to select products, add
-                      to cart, delete from cart, this huge front-end UI design
-                      is written in Reactjs based on a Figma design
-                    </li>
-                    <li>
-                      Restaurant page - Used React, React-icons to transform a
-                      Figma design to a fully functional website
-                    </li>
-                    <li>
-                      Admin Dashboard - provide key overview, data, graphs using
-                      syncfusion
                     </li>
                   </ul>
                 </div>
@@ -264,8 +274,8 @@
     <section class="project" id="project">
       <div class="max-width">
         <h2 class="title white">Projects</h2>
-        <div class="project-content">
-          <div class="card" data-aos="fade-left">
+        <div id="project-content" class="project-content">
+          <!-- <div class="card" data-aos="fade-left">
             <a
               href="https://mernstack-ecommerce-03q21.netlify.app"
               target="_blank"
@@ -346,26 +356,6 @@
             </a>
           </div>
 
-          <!-- <div class="card" data-aos="fade-right">
-            <a
-              href="https://agitated-shirley-9ee019.netlify.app"
-              target="_blank"
-            >
-              <div class="box">
-                <img
-                  class="project-img"
-                  src="images/audiophile.png"
-                  alt="ecommpage"
-                />
-                <div class="text">E-Commerce Page</div>
-                <p>
-                  A huge e-commerce design, store items in cart using
-                  localstorage
-                </p>
-              </div>
-            </a>
-          </div> -->
-
           <div class="card" data-aos="fade-right">
             <a href="https://silly-toffee-c62833.netlify.app" target="_blank">
               <div class="box">
@@ -435,8 +425,9 @@
                 <p>Calculate your tip with a simple web app using Reactjs</p>
               </div>
             </a>
-          </div>
+          </div> -->
         </div>
+
         <h2 style="margin-top: 70px" class="title white">Landing Pages</h2>
         <div class="slider" data-slick>
           <div class="slider-card">

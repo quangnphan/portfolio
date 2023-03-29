@@ -1,4 +1,74 @@
 $(document).ready(function () {
+  const projects = [
+    {
+      id: 1,
+      dataAos: "fade-left",
+      link: "https://mernstack-ecommerce-03q21.netlify.app",
+      imgSrc: "images/mern-ecommerce.png",
+      name: "E-Commerce App",
+      des: "A MERN stack app built with Reactjs, MaterialUI, Stripejs, and Redux Toolkit",
+    },
+    {
+      id: 2,
+      dataAos: "fade-right",
+      link: "https://youtube-appppp.netlify.app",
+      imgSrc: "images/youtube.png",
+      name: "Youtube Clone",
+      des: "Built with Reactjs, MaterialUI, react-router-dom, axios",
+    },
+    {
+      id: 3,
+      dataAos: "fade-left",
+      link: "https://quangnphan.github.io/tip-calculator/",
+      imgSrc: "images/tip-calculator.png",
+      name: "Tip Calculator",
+      des: "Calculate your tip with a simple web app using Reactjs",
+    },
+    {
+      id: 4,
+      dataAos: "fade-right",
+      link: "https://quangnphan.github.io/cocktail-project/",
+      imgSrc: "images/cocktails.png",
+      name: "Drinks and Cocktails",
+      des: "A cocktails database fetch from JSON Api, built with Reactjs",
+    },
+    {
+      id: 5,
+      dataAos: "fade-left",
+      link: "https://music-player-qp.netlify.app",
+      imgSrc: "images/music-player.png",
+      name: "Music Player",
+      des: "Built with Reactjs, Redux Toolkit, Tailwind, Axios",
+    },
+  ];
+
+  const projectContent = document.getElementById("project-content");
+
+  const mappedProjects = projects.map((item) => {
+    return `
+      <div key=${item.id} class="card" data-aos=${item.dataAos}>
+      <a
+        href=${item.link}"
+        target="_blank"
+      >
+        <div class="box">
+          <img
+            class="project-img"
+            src="${item.imgSrc}"
+            alt="project-card"
+          />
+          <div class="text">${item.name}</div>
+          <p>
+          ${item.des}
+          </p>
+        </div>
+      </a>
+    </div>
+      `;
+  }).join('');
+
+  projectContent.innerHTML = mappedProjects;
+
   $(window).scroll(function () {
     if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
@@ -7,35 +77,36 @@ $(document).ready(function () {
     }
   });
   //slick slider
-  $(".slider").slick(
-    {
+  $(".slider").slick({
     // the magic
     responsive: [
       {
         breakpoint: 2000,
-        settings:{
+        settings: {
           slidesToShow: 3,
-          infinite:true
-        }
+          infinite: true,
+        },
       },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          infinite: true
-        }
-      }, {
+          infinite: true,
+        },
+      },
+      {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          dots: true
-        }
-      }, {
+          dots: true,
+        },
+      },
+      {
         breakpoint: 300,
-        settings: "unslick" // destroys slick
-      }]
-  }
-  );
+        settings: "unslick", // destroys slick
+      },
+    ],
+  });
   // toggle menu
   $(".menu-btn").click(function () {
     $(".navbar .menu").toggleClass("active");
@@ -82,8 +153,7 @@ $(document).ready(function () {
   }
 
   // When the user clicks on the button, scroll to the top of the document
-  $(mybutton).click(function()
-	{
-		jQuery('html,body').animate({scrollTop:0},0);
-	})
+  $(mybutton).click(function () {
+    jQuery("html,body").animate({ scrollTop: 0 }, 0);
+  });
 });
