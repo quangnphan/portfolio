@@ -48,7 +48,7 @@ $(document).ready(function () {
     return `
       <div key=${item.id} class="card" data-aos=${item.dataAos}>
       <a
-        href=${item.link}"
+        href=${item.link}
         target="_blank"
       >
         <div class="box">
