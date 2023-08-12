@@ -12,7 +12,7 @@ $(document).ready(function () {
       id: 2,
       dataAos: "fade-right",
       link: "https://admin-ecom-qp0321.netlify.app",
-      imgSrc: "images/admin-ecom.png",
+      imgSrc: "images/admin-ecomm.png",
       name: "Admin Dashboard",
       des: "The dashboard connected to the same database for the E-commerce website, we can handle api requests such as create/update products, or just check the payments from Stripe",
     },
